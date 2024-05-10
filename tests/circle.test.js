@@ -1,9 +1,9 @@
-const { createSvg } = require('../lib/svg.js')
+const { Circle } = require('../lib/shapes.js')
 
-describe('Triangle', () => {
+describe('Circle', () => {
     test('should throw error if render() is called', () =>{
-        const triangle = new Triangle (); 
-        const err = new Error ('Child class must implement a render() method.')
-        expect(triangle.render).toThrow(err);
+        const shape = new Circle();
+        shape.setColor("blue");
+        expect(shape.render()).toEqual('<circle cx="150" cy="100" r="80" fill="blue" />');
     });
 });

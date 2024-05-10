@@ -1,5 +1,5 @@
-const Shape = require('./lib/shapes.js');
+const SVG = require('./lib/svg.js');
 
-const shape = new Shape();
+const svg = new SVG();
 
-shape.run();
+svg.run();
